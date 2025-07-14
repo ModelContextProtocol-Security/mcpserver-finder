@@ -1,129 +1,196 @@
 # MCP Server Finder
 
-**MCP server discovery and recommendation tool. Helps users find existing MCP servers for specific use cases or identifies gaps where new servers are needed. Part of the Model Context Protocol Security initiative.**
+**MCP server discovery expert and tutor. Teaches users how to evaluate and select MCP servers, provides guidance on requirements analysis, and helps navigate the MCP ecosystem to find the right solutions for specific needs.**
 
 ## Overview
 
-MCP Server Finder is an intelligent discovery tool that helps users navigate the growing ecosystem of Model Context Protocol servers. Whether you need to integrate with a specific service like Cloudflare or Notion, or accomplish a general task like writing sales emails, this tool will research, analyze, and recommend the best available MCP servers for your needs.
+MCP Server Finder is your expert guide for navigating the Model Context Protocol ecosystem. Rather than just being a search tool, it serves as a knowledgeable tutor who teaches you how to evaluate MCP servers, understand what makes a good server, identify red flags, and make informed decisions about which servers to use for your specific needs.
 
-The tool goes beyond simple searching—it provides comprehensive analysis of each potential solution, including security considerations, maintenance status, and capability assessments, enabling informed decision-making for MCP server adoption. Crucially, it generates structured reports that serve as artifacts for decision justification and future reference, helping users make choices based on their specific needs and constraints.
+The server combines educational guidance with practical discovery capabilities, helping you understand not just what servers exist, but how to evaluate them effectively. It teaches you the criteria that matter, walks you through the decision-making process, and helps you develop the skills to make good choices independently.
 
-## Key Features
+## Expert-Guided Approach
 
-- **Intelligent Discovery**: Uses web search and MCP registry sites to find relevant servers
-- **Comprehensive Analysis**: Examines documentation, code quality, and maintenance status
-- **Detailed Reporting**: Generates structured reports for each potential solution
-- **Interactive Consultation**: Guides users through decision-making with tailored questions
-- **Context Resilience**: Persists progress to filesystem to handle large research sessions
-- **Security Focus**: Evaluates servers through a security and safety lens
+This MCP server is designed as an **expert advisor and tutor** in its domain, with the primary focus on providing guidance, education, and practical recommendations rather than being a comprehensive implementation tool. While it includes enough functional capability to be immediately useful and demonstrate real expertise, the long-term vision is for this server to serve as your domain expert who helps you understand the landscape, evaluate options, and find the right tools for your specific needs. As the MCP ecosystem evolves, this server will learn about new tools and approaches, recommending the best solutions while teaching you how to evaluate and use them effectively. The broader Model Context Protocol Security initiative may also develop comprehensive implementation tools, but these specific repositories are focused on being practical expert guidance systems—combining deep domain knowledge with enough hands-on capability to provide genuine value, not just theoretical advice.
 
-## Goals and Strategies
+## Key Capabilities
 
-### Primary Goals
+### Educational Guidance
+- **Requirements Analysis Tutoring**: Teaches you how to define and articulate your needs clearly
+- **Evaluation Criteria Education**: Explains what makes a good MCP server and what to look for
+- **Red Flag Recognition**: Helps you identify potential security concerns and quality issues
+- **Decision-Making Framework**: Guides you through structured approaches to server selection
+- **Best Practices Teaching**: Shares knowledge about effective MCP server usage patterns
 
-1. **Reduce MCP Server Discovery Time**: Eliminate the need for users to manually search through multiple registries and repositories
-2. **Enable Informed Decision-Making**: Help users understand their needs, constraints, and priorities to make optimal choices
-3. **Generate Decision Artifacts**: Create comprehensive reports that justify choices and serve as future reference materials
-4. **Provide Comprehensive Analysis**: Deliver detailed evaluation beyond basic functionality matching
-5. **Identify Ecosystem Gaps**: Highlight areas where no suitable MCP servers exist, informing development priorities
-6. **Enable Resumable Research**: Handle large-scale discovery sessions that may exceed context limits
+### Practical Discovery
+- **Basic Server Search**: Can search GitHub, MCP registries, and community resources
+- **Simple Analysis**: Performs basic evaluation of server characteristics and documentation
+- **Comparison Support**: Helps compare different servers against your criteria
+- **Gap Identification**: Identifies when no suitable servers exist for your needs
+- **Community Intelligence**: Accesses information about server reputation and usage
 
-### Core Strategies
+### Expert Orchestration
+- **Tool Recommendations**: Suggests specialized discovery and analysis tools when needed
+- **Resource Guidance**: Points you to additional resources and information sources
+- **Expert Referrals**: Connects you with other domain experts when appropriate
+- **Methodology Sharing**: Teaches you advanced discovery and evaluation techniques
+- **Ecosystem Navigation**: Helps you understand the broader MCP landscape
 
-#### 1. Multi-Source Discovery
-- **Web Search Integration**: Leverage search engines to find relevant MCP servers across the internet
-- **Registry Crawling**: Systematically search known MCP server directories and marketplaces
-- **Documentation Analysis**: Read and analyze README files, documentation, and repository metadata
-- **Community Resources**: Tap into community-curated lists and awesome repositories
+## Goals and Teaching Approach
 
-#### 2. Comprehensive Server Analysis
-- **Functional Assessment**: Determine what the server actually does vs. what it claims to do
-- **Quality Evaluation**: Assess code quality, documentation completeness, and test coverage
-- **Maintenance Status**: Evaluate activity levels, recent updates, and community engagement
-- **Community Research**: Analyze GitHub issues, discussions, forum posts, and community feedback
-- **Security Intelligence**: Review vulnerability reports, security advisories, and audit findings
-- **Compatibility Check**: Verify MCP protocol version compatibility and client support
+### Primary Educational Goals
 
-#### 3. Structured Reporting System
-- **Requirements Definition**: Create comprehensive report defining user needs, constraints, and priorities
-- **Individual Server Reports**: Detailed analysis of each discovered server
-- **Comparative Analysis**: Side-by-side comparison of similar servers
-- **Gap Analysis**: Identification of unmet requirements and missing capabilities
-- **Summary Recommendations**: Ranked suggestions with reasoning and trade-offs
-- **Decision Artifacts**: Structured reports suitable for justification and future reference
+1. **Develop Evaluation Skills**: Teach users how to assess MCP servers independently
+2. **Build Requirements Definition Capability**: Help users articulate their needs clearly
+3. **Foster Security Awareness**: Educate about security considerations in server selection
+4. **Promote Best Practices**: Share knowledge about effective MCP server usage
+5. **Enable Informed Decisions**: Provide frameworks for making good choices
+6. **Build Community Knowledge**: Contribute to collective understanding of MCP server quality
 
-#### 4. Interactive User Guidance
-- **Requirements Clarification**: Ask targeted questions to understand user needs
-- **Constraint Discussion**: Explore security, performance, and operational constraints
-- **Decision Support**: Guide users through selection criteria and trade-offs
-- **Implementation Planning**: Provide next steps for chosen solutions
+### Teaching Strategies
 
-## High-Level Workflow
+#### 1. Interactive Learning
+- **Socratic Method**: Asks questions to help you discover the right criteria
+- **Guided Discovery**: Walks you through the evaluation process step by step
+- **Hands-On Practice**: Provides opportunities to apply learned concepts
+- **Immediate Feedback**: Offers corrections and improvements to your approach
+- **Progressive Complexity**: Starts simple and builds to more sophisticated analysis
 
-### Phase 1: Requirements Gathering
-1. **Initial Query Processing**: Understand user's specific needs or general task
-2. **Constraint Documentation**: Capture security, performance, and operational requirements
-3. **Goal Definition**: Create structured requirements document saved to filesystem
-4. **Scope Planning**: Determine search breadth and depth parameters
+#### 2. Practical Application
+- **Real-World Examples**: Uses actual MCP servers to illustrate concepts
+- **Case Studies**: Analyzes both good and problematic server examples
+- **Scenario-Based Learning**: Presents different use cases and contexts
+- **Problem-Solving**: Helps you work through actual selection challenges
+- **Skill Building**: Develops your ability to evaluate servers independently
 
-### Phase 2: Discovery and Research
-1. **Multi-Source Search**: Query web search engines, MCP registries, and community lists
-2. **Candidate Identification**: Compile list of potentially relevant MCP servers
-3. **Documentation Harvesting**: Retrieve and analyze README files, documentation, and metadata
-4. **Repository Analysis**: Examine code structure, commit history, and community activity
-5. **Progress Persistence**: Save findings to filesystem to handle context limits
+#### 3. Knowledge Sharing
+- **Best Practices Communication**: Shares proven approaches and techniques
+- **Common Pitfalls**: Warns about frequent mistakes and how to avoid them
+- **Expert Insights**: Provides professional perspectives on server evaluation
+- **Community Wisdom**: Shares collective knowledge from the MCP community
+- **Continuous Learning**: Stays current with ecosystem developments
 
-### Phase 3: Analysis and Evaluation
-1. **Functional Analysis**: Determine actual capabilities vs. documented features
-2. **Quality Assessment**: Evaluate code quality, documentation, and testing
-3. **Security Evaluation**: Identify potential security concerns and compliance gaps
-4. **Maintenance Review**: Assess project health and long-term viability
-5. **Individual Reporting**: Generate detailed report for each viable candidate
+## Expert Knowledge Areas
 
-### Phase 4: Synthesis and Recommendation
-1. **Comparative Analysis**: Compare candidates across multiple dimensions
-2. **Gap Identification**: Highlight areas where no suitable servers exist
-3. **Interactive Consultation**: Engage user to refine requirements and preferences
-4. **Recommendation Ranking**: Provide ranked suggestions with detailed reasoning
-5. **Implementation Guidance**: Offer next steps and integration considerations
+### MCP Server Evaluation
+- **Quality Indicators**: What characteristics indicate a well-built server
+- **Security Considerations**: How to assess security implications and risks
+- **Compatibility Assessment**: Understanding client compatibility and protocol adherence
+- **Performance Factors**: Evaluating efficiency and resource requirements
+- **Maintenance Status**: Assessing project health and long-term viability
 
-## File System Structure
+### Requirements Analysis
+- **Needs Assessment**: How to clearly define what you're trying to accomplish
+- **Constraint Identification**: Understanding limitations and requirements
+- **Priority Setting**: Determining what matters most for your use case
+- **Trade-off Analysis**: Balancing different factors and requirements
+- **Success Criteria**: Defining what constitutes a successful server choice
 
-**TBD** - File organization and structure to be determined based on implementation requirements.
+### Ecosystem Navigation
+- **Discovery Sources**: Where to find MCP servers and how to search effectively
+- **Community Resources**: Leveraging community knowledge and recommendations
+- **Vendor Evaluation**: Assessing different types of server sources and maintainers
+- **Integration Patterns**: Understanding how servers fit into broader workflows
+- **Future Planning**: Considering long-term implications of server choices
 
-## Context Resilience
+## Practical Workflow
 
-When approaching context limits, the tool:
-1. Saves all progress to structured files as user accepts requirements or server reports
-2. Provides clear instructions for resuming in a new session
-3. Maintains state through filesystem persistence with updateable progress tracking
-4. Enables incremental research and analysis that can be refined over time
-5. Supports iterative improvement of requirements and findings
+### Phase 1: Requirements Discovery and Education
+1. **Need Analysis Tutorial**: Interactive session to help define your requirements
+2. **Context Understanding**: Learn about your specific use case and constraints
+3. **Criteria Education**: Teach relevant evaluation criteria for your situation
+4. **Priority Setting**: Help you understand what matters most for your needs
+5. **Success Definition**: Establish clear criteria for a successful server choice
 
-## Security Considerations
+### Phase 2: Guided Discovery and Research
+1. **Search Strategy**: Teach effective approaches for finding relevant servers
+2. **Basic Discovery**: Perform initial searches across known sources
+3. **Evaluation Teaching**: Guide you through assessing discovered servers
+4. **Comparison Framework**: Help you compare options systematically
+5. **Red Flag Detection**: Identify potential concerns and teach recognition skills
 
-The primary focus of this tool is **finding MCP servers that are fit for purpose** - servers that actually accomplish what the user needs. This is the core concern.
+### Phase 3: Analysis and Decision Support
+1. **Detailed Evaluation**: Deep dive into promising candidates
+2. **Risk Assessment**: Evaluate security and operational considerations
+3. **Fit Analysis**: Assess how well options match your requirements
+4. **Trade-off Discussion**: Help you understand compromises and decisions
+5. **Recommendation Reasoning**: Explain the logic behind suggestions
 
-Security evaluation is a secondary consideration during the discovery phase. When security issues are identified, they can be addressed through the complementary tools in this ecosystem:
-- **mcpserver-audit**: For comprehensive security analysis and vulnerability assessment
-- **mcpserver-builder**: For creating secure alternatives or fixing identified issues
+### Phase 4: Implementation Guidance and Next Steps
+1. **Selection Validation**: Confirm your choice makes sense for your needs
+2. **Implementation Planning**: Guidance on next steps for using the chosen server
+3. **Risk Mitigation**: Advice on addressing identified concerns
+4. **Monitoring Recommendations**: What to watch for after implementation
+5. **Learning Reinforcement**: Summarize key lessons and skills developed
 
-This tool is part of an integrated ecosystem where each component serves a specific purpose, and they work together to provide a complete solution for MCP server adoption and security.
+## Basic Functional Capabilities
 
-## Usage
+### Discovery Functions
+- **Repository Search**: Can search GitHub and other code repositories
+- **Registry Query**: Access to MCP server registries and directories
+- **Documentation Analysis**: Basic parsing and analysis of server documentation
+- **Metadata Extraction**: Gathering key information about servers
+- **Community Intelligence**: Access to reputation and usage information
 
-This MCP server is designed to be used with MCP-compatible clients like Claude Desktop, Cursor, or other AI assistants. It requires:
-- **File System Access**: For persistent reporting and progress tracking
-- **Web Search Capabilities**: For comprehensive server discovery
-- **Interactive Capabilities**: For user consultation and requirement refinement
+### Analysis Functions
+- **Characteristic Assessment**: Basic evaluation of server features and capabilities
+- **Documentation Quality**: Assessment of documentation completeness and clarity
+- **Activity Analysis**: Evaluation of project activity and maintenance status
+- **Compatibility Check**: Basic assessment of client compatibility
+- **Risk Identification**: Recognition of common security and quality concerns
+
+### Guidance Functions
+- **Interactive Consultation**: Conversational guidance through decision-making
+- **Structured Comparison**: Systematic comparison of server options
+- **Requirement Matching**: Alignment of servers with user needs
+- **Decision Documentation**: Recording of evaluation rationale and decisions
+- **Learning Progress**: Tracking of user skill development and knowledge gaps
+
+## Integration with Ecosystem
+
+### Learning from Other Experts
+- **mcpserver-audit**: Incorporate security expertise and vulnerability knowledge
+- **mcpserver-builder**: Understand development best practices and quality indicators
+- **mcpserver-operator**: Learn about operational requirements and deployment considerations
+- **Community Knowledge**: Leverage collective experience and recommendations
+
+### Teaching Preparation for Next Steps
+- **Audit Preparation**: Prepare users for security evaluation of chosen servers
+- **Implementation Planning**: Set up users for successful deployment and operation
+- **Development Insights**: Provide context for potential customization or development
+- **Operational Readiness**: Ensure users understand deployment and maintenance implications
+
+## Expert Development and Learning
+
+### Continuous Knowledge Updates
+- **Ecosystem Monitoring**: Stay current with new servers and developments
+- **Community Engagement**: Learn from user experiences and feedback
+- **Expert Consultation**: Incorporate insights from security and development experts
+- **Best Practice Evolution**: Adapt guidance based on emerging patterns and lessons
+- **Tool Integration**: Learn about new discovery and analysis tools
+
+### Teaching Methodology Improvement
+- **Effectiveness Assessment**: Evaluate how well users learn and apply knowledge
+- **Approach Refinement**: Improve teaching methods based on user success
+- **Curriculum Development**: Enhance educational content and progression
+- **Feedback Integration**: Incorporate user feedback into teaching approaches
+- **Skill Assessment**: Better understanding of user knowledge gaps and needs
+
+## Usage and Access
+
+This MCP server is designed to be used with MCP-compatible clients and requires:
+- **Interactive Capabilities**: For conversational guidance and tutoring
+- **Basic Web Access**: For searching repositories and accessing community resources
+- **Knowledge Base Access**: For accessing expert knowledge and best practices
+- **Learning Management**: For tracking user progress and adapting guidance
 
 ## Contributing
 
-This tool is part of the broader Model Context Protocol Security initiative. Contributions are welcome, particularly:
-- New discovery sources and search strategies
-- Enhanced analysis frameworks
-- Security evaluation criteria
-- Integration with additional MCP registries
+This tool is part of the broader Model Context Protocol Security initiative. We welcome contributions that enhance the expert knowledge and teaching capabilities:
+- **Domain Expertise**: Insights about MCP server evaluation and selection
+- **Teaching Methods**: Improved approaches for educating users about server choice
+- **Discovery Techniques**: Better methods for finding and analyzing servers
+- **Evaluation Frameworks**: Enhanced criteria and methodologies for server assessment
+- **Community Intelligence**: Information about server reputation, usage patterns, and quality
 
 ---
 
