@@ -16,7 +16,35 @@ You are conducting a targeted evaluation of a specific MCP server that the user 
    - "What role would this server play in your workflow if you chose it?"
    - "Are there specific concerns or requirements I should know about?"
 
-3. **Evaluation Framework Introduction**
+3. **Server Type Classification**
+   Help the user categorize the server to focus evaluation efforts:
+   - "Based on what you've learned about this server, what type would you say it is?"
+
+   **Data Access Servers** (Database, File System, APIs):
+   - **Focus Areas**: Data exposure, access controls, data residency
+   - **Key Teaching Questions**:
+     - "What data does this server access? How sensitive is it?"
+     - "How does it authenticate to data sources? What could go wrong there?"
+     - "Where does your data end up? Do you control that?"
+     - "What happens if this server logs or caches your data?"
+
+   **Automation Servers** (CI/CD, Deployment, System Control):
+   - **Focus Areas**: Execution permissions, environment access, privilege escalation
+   - **Key Teaching Questions**:
+     - "What can this server execute? In what context?"
+     - "What credentials does it need? How are those protected?"
+     - "If this were compromised, what could an attacker do to your systems?"
+     - "How does it interact with your deployment infrastructure?"
+
+   **Integration Servers** (External APIs, Webhooks, Cloud Services):
+   - **Focus Areas**: Token management, rate limiting, third-party dependencies
+   - **Key Teaching Questions**:
+     - "What external services does this connect to? How much do you trust them?"
+     - "How are API tokens scoped? What's the blast radius if compromised?"
+     - "What happens if the external service goes down or changes?"
+     - "How does it handle rate limits and service failures?"
+
+4. **Evaluation Framework Introduction**
    - Reference the comprehensive template at `research/mcp-server-finder_evaluation_template.md`
    - Don't overwhelm them - focus on the most relevant sections for their use case
    - Explain why each evaluation category matters for their specific situation

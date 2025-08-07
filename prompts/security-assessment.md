@@ -89,6 +89,40 @@ Reference and teach from:
 - "What do you notice about their error handling?"
 - "How do they manage secrets and configuration?"
 
+## Security Pattern Detection (Teaching Detection Skills)
+
+**Input Validation Issues**:
+```bash
+# Look for unsafe operations that could execute code
+grep -r "eval\|exec" --include="*.py" --include="*.js" .
+# Check for unsafe deserialization 
+grep -r "pickle\.loads\|yaml\.load[^_]" --include="*.py" .
+```
+"What do you find when you run this? What could go wrong with these patterns?"
+
+**File Access Security**:
+```bash
+# Check for path traversal risks
+grep -r "\.\./\|\.\.\\\\\" --include="*.py" --include="*.js" .
+# Look for overly broad file permissions
+grep -r "chmod.*777\|os\.chmod.*0o777" --include="*.py" .
+```
+"Any concerning file access patterns? How could these be exploited?"
+
+**Network Security Patterns**:
+```bash
+# Look for unencrypted connections
+grep -r "http://\|ssl.*False\|verify.*False" --include="*.py" --include="*.js" .
+# Check for broad network bindings
+grep -r "0\.0\.0\.0\|bind.*all" --include="*.py" --include="*.js" .
+```
+"What network security issues do you spot? How would you fix them?"
+
+**Teach Pattern Recognition**:
+- "Now that you've seen these patterns, what would you look for in other servers?"
+- "Which of these issues concern you most for your use case?"
+- "How would you verify if these are actually exploitable?"
+
 **Configuration Review**:
 - "What security configurations are available?"
 - "What are the default settings - are they secure?"
@@ -105,6 +139,62 @@ Reference and teach from:
 - "What controls could reduce these risks?"
 - "How would you monitor for security issues?"
 - "What's your backup plan if this server fails?"
+
+## Risk Mitigation Strategy Framework
+
+**Teach systematic risk mitigation based on assessment results:**
+
+### High-Risk Server (Significant concerns, but must use)
+**Network Isolation**:
+- "How would you isolate this server's network access?"
+- "What firewall rules would limit the blast radius?"
+- "Could you run this in a sandboxed environment or container?"
+
+**Enhanced Monitoring**:
+- "What would you log to detect compromise?"
+- "How would you set up alerts for suspicious behavior?"
+- "What baseline behavior should you establish first?"
+
+**Compensating Controls**:
+- "What additional security layers could you add?"
+- "How would you limit this server's permissions?"
+- "What would prevent lateral movement if it's compromised?"
+
+### Medium-Risk Server (Standard concerns, manageable)
+**Standard Hardening**:
+- "What configuration changes would reduce attack surface?"
+- "How would you secure the deployment environment?"
+- "What unused features or endpoints should be disabled?"
+
+**Regular Maintenance**:
+- "How often would you update dependencies?"
+- "What's your plan for security patches?"
+- "How would you test updates before deploying?"
+
+### Acceptable Risk Server (Minor concerns)
+**Basic Hygiene**:
+- "What minimal monitoring is needed?"
+- "How would you stay informed about security updates?"
+- "What would trigger a security re-assessment?"
+
+### Decision Framework
+"Given the risks we've identified and mitigation options:
+
+1. **Can you accept the residual risk?** 
+   - What happens in the worst-case scenario?
+   - Is that acceptable for your use case?
+
+2. **Do you have resources to implement mitigations?**
+   - Time, expertise, and infrastructure needed?
+   - Ongoing maintenance burden?
+
+3. **Are there alternatives with better risk profiles?**
+   - Should we look for other servers?
+   - Could you build something simpler internally?
+
+4. **What's your monitoring and response plan?**
+   - How will you detect problems?
+   - What's your incident response process?"
 
 ## Integration with Security Ecosystem
 
