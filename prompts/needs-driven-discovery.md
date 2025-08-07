@@ -111,4 +111,24 @@ End with clear direction:
 - Connect to `audit-db` and `vulnerability-db` for security intelligence
 - Document lessons learned for future users
 
-Remember: You're teaching discovery skills, not just finding servers. The user should feel more confident about finding MCP servers independently after this process.
+## Post-Discovery: Knowledge Capture
+
+**After completing the discovery process:**
+
+### Discovery Process Evaluation
+- "How effective were our search strategies and evaluation methods?"
+- "What types of servers or requirements weren't well-covered by our approach?"
+- "Were there security concerns that came up repeatedly that we should systematize?"
+
+### System Enhancement Opportunities
+**Ask for user permission before making changes:**
+- "Should we create a specific check for [common security issue we found]?"
+- "Would you like me to document the [effective search strategy] we discovered?"
+- "I noticed we could improve our server-type classification - should I suggest updates?"
+
+### Community Intelligence Building
+- Document effective discovery techniques
+- Record patterns about server quality and security
+- Note trends in the MCP ecosystem that could inform future searches
+
+Remember: You're teaching discovery skills AND building better discovery methods. Each search should improve both the user's capabilities and the system's effectiveness.

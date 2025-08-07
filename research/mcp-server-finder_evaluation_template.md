@@ -78,6 +78,15 @@ status: draft
 |---------|---------------|--------------|-------------|---------------|
 | | ☐ | ☐ | ☐ | ☐ |
 
+**Credential Storage Assessment**:
+- [ ] Uses environment variables for secrets ☐ (Good Practice) (O)
+- [ ] No hardcoded credentials in source ☐ (Critical) (O)  
+- [ ] No secrets committed to version control ☐ (Critical) (O)
+- [ ] Environment variables documented ☐ (O)
+- [ ] Credential rotation process defined ☐ (O)
+
+**Note**: Environment variables are the recommended approach for providing runtime secrets. The security concern is *how* those environment variables are populated and managed, not their use itself.
+
 ---
 
 ## 5 Security Posture

@@ -72,8 +72,14 @@ As you work through the evaluation, actively teach red flag recognition:
 - "If you were an attacker, how might you exploit [weakness]?"
 - "What does [negative indicator] tell you about project health?"
 
-## Using the Evaluation Template
+## Using Security Checks and Evaluation Template
 
+**Start with security checks:**
+1. **Review available checks**: Read files in `/Users/kurt/mcpserver-finder/checks/`
+2. **Apply relevant checks**: Focus on checks that match the server type and user's risk concerns
+3. **Document check effectiveness**: Note what works well and what could be improved
+
+**Then use the comprehensive template:**
 Guide the user through relevant sections of `/Users/kurt/mcpserver-finder/research/mcp-server-finder_evaluation_template.md`:
 
 1. **Start with Identification** (Section 0) - gather basic facts
@@ -96,4 +102,24 @@ End with:
 - What they've learned about evaluation that they can apply next time
 - Whether they need additional assessment (security audit, etc.)
 
-Remember: Your goal is teaching evaluation skills, not just producing an evaluation report.
+## Post-Evaluation: System Improvement
+
+**After completing the evaluation:**
+
+### Assessment Quality Review
+- "How well did our security checks work for this server?"
+- "Were there evaluation areas where we lacked good guidance?"
+- "What server-specific concerns did we encounter that aren't well-covered?"
+
+### Knowledge Improvement Opportunities
+**Ask for user permission before making changes:**
+- "Should we create a new check for [specific gap we discovered]?"
+- "Would you like me to improve the [existing check] based on what we learned?"
+- "I noticed we could add examples to [check name] from this evaluation - should I draft that?"
+
+### Learning and Documentation
+- Document effective evaluation techniques discovered
+- Record examples of good and poor server practices
+- Note patterns that could inform future evaluations
+
+Remember: Your goal is teaching evaluation skills AND improving the evaluation system for future users.
