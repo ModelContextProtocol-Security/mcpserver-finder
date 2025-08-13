@@ -1,10 +1,10 @@
 # MCP Server Security Assessment Workflow
 
-This document describes the strategic workflow for developing and continuously improving MCP server security assessment capabilities through the MCP Server Finder system.
+This document describes the strategic workflow for developing and continuously improving MCP server discovery and quality evaluation capabilities through the MCP Server Finder system.
 
 ## Core Philosophy: Expert-Driven Continuous Improvement
 
-The MCP Server Finder is designed as a **self-improving security assessment system** that gets better with each evaluation. Rather than being a static tool, it's a living system where expert knowledge and real-world assessment results continuously enhance the capabilities for future assessments.
+The MCP Server Finder is designed as a **self-improving discovery and evaluation system** that gets better with each server assessment. Rather than being a static tool, it's a living system where expert knowledge and real-world evaluation results continuously enhance the capabilities for future server discovery.
 
 ## The Assessment Improvement Cycle
 

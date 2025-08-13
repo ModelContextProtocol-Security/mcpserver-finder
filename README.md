@@ -339,60 +339,36 @@ This tool is part of the **Model Context Protocol Security** initiative - a comm
 - **Community knowledge** - Sharing insights about tool quality and safety
 - **Continuous improvement** - Getting better through real-world usage
 
-### Personalized Learning (Future Vision)
+### Personalized Discovery (Future Vision)
 
-**Long-term goal**: Make the teaching style flexible and personalized to each user's needs, experience level, and learning preferences.
+**Long-term goal**: Make the discovery and evaluation process adapt to each user's specific needs, experience level, and use cases.
 
-Since this is an AI-powered tool, we can build assessment capabilities that customize themselves to you:
-- **Adapt to your skill level** - Beginners get more explanation, experts get concise analysis
-- **Match your role** - Different guidance for developers vs. business users vs. security professionals
-- **Learn your preferences** - Remember what teaching methods work best for you
-- **Focus on your goals** - Emphasize the security aspects most relevant to your use case
-- **Evolve with you** - Become more advanced as your expertise grows
+Since this is an AI-powered tool, we can build discovery capabilities that customize themselves to you:
+- **Adapt to your experience** - Beginners get more explanation, experts get focused analysis
+- **Match your role** - Different guidance for developers vs. business users vs. system administrators
+- **Learn your preferences** - Remember what evaluation criteria matter most to you
+- **Focus on your context** - Emphasize the quality aspects most relevant to your use case
+- **Evolve with you** - Become more sophisticated as your server evaluation expertise grows
 
-**AI enables personalization at scale** - the same tool can be a patient tutor for newcomers and an efficient expert advisor for professionals, adapting in real-time to what each user needs and wants.
+**AI enables personalized discovery at scale** - the same tool can be a patient guide for newcomers and an efficient expert advisor for professionals, adapting in real-time to what each user needs to find the right server.
 
-### Comprehensive Security Coverage (Present and Future)
+### Quality Assessment Approach
 
-Our assessment approach covers **both known and unknown security risks**:
+Our evaluation approach focuses on **practical server selection criteria**:
 
-**Known Vulnerabilities**: We systematically cover established security patterns:
-- **Standard CWE categories** - All applicable Common Weakness Enumerations 
-- **AI-specific threats** - Prompt injection, model manipulation, training data poisoning
-- **MCP protocol risks** - Transport security, authentication flows, message validation
-- **Supply chain issues** - Dependency vulnerabilities, maintainer trust, build security
+**Quality Indicators**: We systematically assess key quality factors:
+- **Maintenance patterns** - Active development, responsive maintainers, regular updates
+- **Code quality** - Clean code, good practices, comprehensive testing
+- **Documentation quality** - Clear setup instructions, usage examples, troubleshooting guides
+- **Community health** - User adoption, issue response times, community engagement
 
-**Emerging Threats**: We train the AI to recognize new and evolving risks:
-- **Pattern recognition** - Identify suspicious code structures that don't match known vulnerabilities
-- **Contextual analysis** - Spot concerning combinations of features that individually seem safe
-- **Behavioral assessment** - Detect unusual server behaviors that could indicate novel attack vectors
-- **Ecosystem monitoring** - Flag new trends in the MCP community that might introduce risks
+**Reliability Assessment**: We evaluate operational reliability:
+- **Error handling** - How servers handle failures and edge cases
+- **Performance patterns** - Resource usage, response times, scalability considerations
+- **Compatibility** - MCP protocol compliance, client compatibility, version support
+- **Deployment readiness** - Installation process, configuration options, operational requirements
 
-**The goal**: Create an assessment system that catches both the security issues we know about today AND the ones we haven't discovered yet. AI's ability to recognize patterns and analyze context makes this possible in ways traditional static analysis tools cannot match.
-
-### Security Framework Integration
-
-We're building comprehensive mappings between vulnerabilities and security frameworks:
-
-**Standards Alignment**:
-- **CWE Mapping** - Every vulnerability linked to Common Weakness Enumeration categories
-- **NIST Framework** - Map findings to NIST Cybersecurity Framework controls
-- **OWASP Integration** - Align with OWASP Top 10 and Application Security standards
-- **ISO 27001 Controls** - Connect vulnerabilities to specific ISO security controls
-
-**Threat Intelligence Integration**:
-- **MITRE ATT&CK** - Map attack patterns to MITRE ATT&CK framework tactics and techniques
-- **Threat Modeling** - Link vulnerabilities to specific threat actors and attack scenarios
-- **Risk Quantification** - Calculate business impact and likelihood scores
-- **Control Effectiveness** - Measure how security controls reduce specific risks
-
-**Enterprise Security Integration**:
-- **Compliance Reporting** - Generate reports for SOC 2, PCI-DSS, HIPAA, etc.
-- **Security Control Mapping** - Show which controls address which vulnerabilities
-- **Risk Register Integration** - Feed findings into enterprise risk management systems
-- **Policy Alignment** - Map findings to organizational security policies
-
-This creates a **comprehensive security intelligence system** that doesn't just find problems, but explains their business impact, regulatory implications, and exactly which security controls need to be implemented to address them.
+**The goal**: Create an assessment system that helps users find servers that will work reliably in their specific context and continue to be maintained over time.
 
 ### Contributing
 
