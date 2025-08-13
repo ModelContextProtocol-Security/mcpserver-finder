@@ -1,6 +1,6 @@
 # MCP Server Finder
 
-**Security assessment tool for MCP servers and Claude Desktop Extensions - because anyone can build them, but not everyone builds them safely.**
+**Discovery and evaluation tool for finding reliable, well-maintained MCP servers that fit your specific needs - because with so many servers available, you need the right one for your requirements.**
 
 ## Why This Tool Exists
 
@@ -61,38 +61,39 @@ Generate complete, production-ready code that can be immediately tested. Focus o
 
 **Timeline:** Ready to demonstrate methodology and framework now. Practical implementation underway - see [TODO.md](./TODO.md) for specific next steps.
 
-## The Problem: Easy to Build, Hard to Build Safely
+## The Challenge: Finding the Right Server
 
-Since anyone can create these tools by asking AI assistants, we're seeing an explosion of MCP servers and extensions. **But many are poorly built and potentially dangerous:**
+With the growing MCP ecosystem, there are many servers available for different purposes. **The challenge is finding ones that are:**
 
-- **Security vulnerabilities** - AI-generated code often has security holes
-- **Data exposure risks** - Tools may leak sensitive information
-- **Poor quality** - Many tools break, perform poorly, or aren't maintained
-- **Unknown trustworthiness** - Hard to tell which tools are safe to use
+- **Well-maintained** - Active development and responsive maintainers
+- **Fit for purpose** - Match your specific requirements and use case
+- **Reliable** - Work consistently and handle errors gracefully  
+- **Quality** - Well-built with good documentation and practices
+- **Compatible** - Work with your MCP client and environment
 
-## The Solution: Security-First Assessment
+## The Solution: Systematic Discovery and Evaluation
 
-This tool helps you **evaluate MCP servers and extensions** before using them, whether they're:
-- Built by AI assistants (like the example above)
-- Downloaded from the community
-- Created by professional developers
-- Something you built yourself
+This tool helps you **find and evaluate MCP servers** to choose the right ones for your needs:
+- Discover servers that match your requirements
+- Assess quality, maintenance status, and reliability
+- Compare options systematically
+- Learn evaluation skills for ongoing server selection
 
 ### What This Tool Does
 
-- **Find reliable tools** - Discover MCP servers and Desktop Extensions that are well-built and secure
-- **Spot dangerous ones** - Identify red flags that indicate security risks or poor quality
-- **Teach evaluation skills** - Learn what to look for and why it matters
-- **Guide safe creation** - Help you build secure tools when using AI assistance
+- **Discover quality servers** - Find MCP servers that are well-maintained and fit your requirements
+- **Assess fitness for purpose** - Evaluate if servers match your specific needs and use case
+- **Compare options systematically** - Use structured criteria to compare different servers
+- **Learn evaluation skills** - Develop expertise in selecting good MCP servers over time
 
 ## Who Needs This Tool
 
 **Everyone in the MCP ecosystem:**
 
-- **Non-programmers creating tools** - Verify your AI-generated extensions are safe
-- **Users downloading tools** - Check if community extensions are trustworthy  
-- **Security-conscious organizations** - Evaluate tools before business use
-- **Developers** - Systematic approach to tool evaluation and creation
+- **Users seeking functionality** - Find servers that provide the capabilities you need
+- **Organizations evaluating tools** - Assess servers before adoption in business workflows
+- **Developers building integrations** - Choose reliable servers for your applications
+- **Community contributors** - Discover quality servers to recommend to others
 
 ## Expert-Guided Approach
 
@@ -314,7 +315,7 @@ read ./checks/github-repository-health.md and assess the repository health of [S
 
 **Building Desktop Extensions**: Follow the DXT specification with our quality and security guidance (see the development prompt example at the beginning of this README)
 
-**Then use our assessment tools** to verify your creation meets quality, security, and safety standards.
+**Then use our assessment tools** to verify your creation meets quality standards. For detailed security analysis, use the companion `mcpserver-audit` tool.
 
 ### System Requirements
 

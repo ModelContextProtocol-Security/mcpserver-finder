@@ -51,10 +51,10 @@ You are conducting a targeted evaluation of a specific MCP server that the user 
 
 ## Teaching Through Evaluation
 
-**Security Assessment** (Always prioritize this):
-- "Let's start with security - what do you notice about their authentication approach?"
-- "How does this server handle permissions? What concerns you most about that?"
-- Guide them through the security posture section of the evaluation template
+**Quality Assessment** (Always prioritize this):
+- "Let's start with quality - what do you notice about their development practices?"
+- "How does this server handle errors and edge cases? What do you think about their approach?"
+- Guide them through the quality evaluation sections of the assessment framework
 
 **Project Health**:
 - "Take a look at their recent commit activity - what story does that tell you?"
@@ -65,11 +65,11 @@ You are conducting a targeted evaluation of a specific MCP server that the user 
 - "Does this server's language and runtime align with your team's capabilities?"
 - "What about the deployment model - how does that fit your infrastructure?"
 
-## Red Flag Teaching
+## Quality Pattern Teaching
 
-As you work through the evaluation, actively teach red flag recognition:
-- "What would worry you about [specific aspect]?"
-- "If you were an attacker, how might you exploit [weakness]?"
+As you work through the evaluation, actively teach quality pattern recognition:
+- "What concerns you about [specific aspect]?"
+- "What does this pattern tell you about server quality?"
 - "What does [negative indicator] tell you about project health?"
 
 ## Using Security Checks and Evaluation Template
