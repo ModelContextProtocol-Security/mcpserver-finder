@@ -1,111 +1,89 @@
-# Security Checks
+# Quality Assessment Checks
 
-This directory contains specific, actionable security verification procedures for MCP server assessment. Each check provides both automated analysis instructions for AI assistants and manual steps for human reviewers.
+This directory contains specific, actionable quality verification procedures for MCP server discovery and evaluation. Each check helps determine if an MCP server is well-built, maintained, and suitable for use.
 
 ## Purpose
 
-Security checks are modular, repeatable verification procedures that:
-- Focus on specific security concerns or attack vectors
-- Provide concrete detection methods and scripts
-- Include context about risk levels and remediation
-- Distinguish between real security issues and security theater
+Quality assessment checks are modular, repeatable procedures that help evaluate:
+- Server quality indicators and best practices
+- Community health and maintenance status  
+- Documentation completeness and clarity
+- Basic reliability and trustworthiness signals
+- Compatibility and integration readiness
 
-## Active Development Workflow
+## Focus Areas
 
-**This directory is under active development and improvement:**
+### Project Health Assessment
+- **Maintenance Activity**: Is the project actively maintained?
+- **Community Engagement**: Does it have active contributors and users?
+- **Documentation Quality**: Is it well-documented and easy to understand?
+- **Release Management**: Are releases regular and well-managed?
 
-### Population Phase
-- **New checks needed**: Many security areas are not yet covered by dedicated checks
-- **Gap identification**: Each security assessment may reveal areas needing new checks
-- **Community contribution**: Real-world MCP server assessments drive check creation
+### Basic Quality Indicators
+- **Code Quality**: Does it follow good development practices?
+- **Error Handling**: Does it handle failures gracefully?
+- **Configuration**: Is it properly configurable for different environments?
+- **Dependencies**: Are dependencies well-managed and up-to-date?
 
-### Continuous Improvement Phase
-- **Check refinement**: Existing checks are regularly improved based on assessment results
-- **Example updates**: Good/bad examples are added from real assessments
-- **Accuracy improvements**: False positive/negative rates are reduced through iteration
-- **Coverage expansion**: Checks are enhanced to cover more security scenarios
-
-### Long-term Integration Goals
-- **CWE Coverage**: Every applicable Common Weakness Enumeration (CWE) should be represented
-- **Vulnerability Integration**: Checks will reference `vulnerability-db` for known issues
-- **Community Intelligence**: Checks will incorporate real-world attack patterns and defenses
+### Usability and Integration
+- **Setup Process**: How easy is it to get started?
+- **Configuration Clarity**: Are setup instructions clear and complete?
+- **Compatibility**: Does it work with standard MCP clients?
+- **Support Resources**: Are there examples and help available?
 
 ## Check Format
 
 Each check follows a standardized format:
-- **Obsidian-formatted markdown** with proper frontmatter including:
-  - `cwe:` tags referencing applicable [Common Weakness Enumeration](https://cwe.mitre.org/) IDs
-  - `vulnerability-db:` references (planned for future integration)
-  - Standard metadata (version, date, tags, priority, status)
-- **Purpose and context** explaining why the check matters
-- **AI instructions** with specific commands and scripts
-- **Human assessment steps** for manual verification
-- **Risk assessment framework** with clear severity levels
-- **Good and bad examples** demonstrating secure vs. insecure patterns
-- **Remediation guidance** for addressing findings
-- **Teaching points** for building security understanding
+- **Obsidian-formatted markdown** with proper frontmatter
+- **Purpose and context** explaining what quality aspect this evaluates
+- **Assessment criteria** with specific things to look for
+- **Good and bad patterns** showing quality vs. poor indicators
+- **Questions to guide evaluation** for both AI assistants and humans
+- **Integration guidance** for using findings in server selection
 
-## CWE Integration
+## Active Development
 
-**Goal**: Comprehensive coverage of applicable Common Weakness Enumerations for MCP servers.
-
-### Current CWE Mapping
-- `credential-management-security.md`: CWE-798 (Hard-coded Credentials), CWE-200 (Information Exposure), CWE-522 (Insufficiently Protected Credentials)
-
-### Priority CWEs for MCP Servers
-High-priority CWEs that need dedicated checks:
-- **CWE-79**: Cross-site Scripting (XSS) - for web-based MCP servers
-- **CWE-89**: SQL Injection - for database-accessing servers  
-- **CWE-94**: Code Injection - for servers executing dynamic code
-- **CWE-287**: Improper Authentication - for authentication mechanisms
-- **CWE-352**: Cross-Site Request Forgery - for web interfaces
-- **CWE-22**: Path Traversal - for file-accessing servers
-- **CWE-502**: Unsafe Deserialization - for data processing servers
-
-### CWE Documentation Standard
-Each check should include in frontmatter:
-```yaml
-cwe: [798, 200]  # List of applicable CWE IDs
-cwe-primary: 798  # Primary CWE this check addresses
-```
-
-## Examples in Security Checks
-
-**Every check should include concrete examples:**
-
-### Good Examples (Secure Patterns)
-- Real code snippets showing proper implementation
-- Configuration examples with security best practices
-- Documentation patterns that indicate quality security practices
-- Server behaviors that demonstrate good security hygiene
-
-### Bad Examples (Insecure Patterns)  
-- Code patterns that create security vulnerabilities
-- Configuration mistakes that expose systems to risk
-- Documentation red flags that indicate security problems
-- Server behaviors that suggest poor security practices
-
-### Example Guidelines
-- **Use real-world patterns** encountered in actual MCP servers
-- **Anonymize** sensitive information while preserving the security lesson
-- **Explain the why** - don't just show good/bad, explain the security implications
-- **Keep current** - update examples as new patterns emerge in the ecosystem
-- **Show context** - include enough surrounding code/config to make examples actionable
+This directory supports the continuous improvement workflow:
+- **New checks needed**: Many quality areas need dedicated assessment procedures
+- **Real-world feedback**: Checks improve based on actual server evaluations
+- **Community contribution**: Server discoveries drive new quality criteria
+- **Pattern recognition**: Common quality issues become standardized checks
 
 ## Available Checks
 
-- **`credential-management-security.md`** - Evaluates how servers handle API keys, tokens, and sensitive configuration
+### Repository and Project Health
+- **`github-repository-health.md`** - Assesses GitHub repository activity, maintainer engagement, and project sustainability
+  - **High Confidence**: Automated metrics (commits, contributors, issues)
+  - **Medium Confidence**: Activity pattern interpretation
+  - **Focus**: Project viability and maintenance commitment
+
+### Code Quality Assessment  
+- **`code-quality-assessment.md`** - Evaluates code structure, style consistency, and maintainability
+  - **High Confidence**: Automated linting and complexity metrics
+  - **Medium Confidence**: Architectural pattern assessment
+  - **Focus**: Code reliability and maintainability
+
+### Testing Quality
+- **`test-quality-assessment.md`** - Reviews test coverage, design quality, and reliability practices
+  - **High Confidence**: Coverage metrics and test execution results
+  - **Medium Confidence**: Test strategy and design evaluation
+  - **Focus**: Server reliability and regression protection
+
+### Dependency Management
+- **`dependency-management-assessment.md`** - Analyzes dependency security, update practices, and supply chain risks
+  - **High Confidence**: Vulnerability scanning and version analysis
+  - **Medium Confidence**: Dependency necessity and risk assessment
+  - **Focus**: Security posture and operational stability
 
 ## Usage with Prompts
 
-These checks are referenced by the security assessment prompts in `/prompts/` and provide the detailed technical guidance for conducting thorough security evaluations.
+These checks support the discovery and evaluation prompts in `/prompts/` by providing structured guidance for assessing server quality, maintenance status, and suitability for specific use cases.
 
 ## Contributing New Checks
 
-When adding new security checks:
-1. Use the established Obsidian format with proper tags
-2. Include both automated and manual assessment methods
-3. Provide clear risk assessment criteria
-4. Explain the security context and common misconceptions
-5. Include practical remediation steps
-6. Add teaching elements for skill development
+When adding quality assessment checks:
+1. Focus on objective, observable quality indicators
+2. Provide clear criteria for good vs. poor quality
+3. Include practical questions to guide assessment
+4. Explain why each quality factor matters for server selection
+5. Keep the focus on discovery and selection, not deep security analysis

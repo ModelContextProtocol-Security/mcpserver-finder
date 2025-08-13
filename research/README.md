@@ -6,11 +6,13 @@ This directory contains draft ideas, research notes, and exploratory work that f
 
 ## Structure
 
-- `evaluation-criteria/` - Research on what makes a good MCP server
-- `security-analysis/` - Security-focused research and threat modeling
-- `teaching-methods/` - Research on effective tutoring and educational approaches
-- `community-feedback/` - Analysis of user feedback and community needs
-- `server-analysis/` - Deep dives into specific MCP servers as case studies
+- `mcp-server-finder_capabilities.md` - High-level capability specification for the finder system
+- `mcp-server-finder_evaluation_template.md` - Comprehensive evaluation template for server assessment
+- `discovery-criteria/` - Research on effective server discovery methods (future)
+- `quality-indicators/` - Research on what makes a good MCP server (future)
+- `teaching-methods/` - Research on effective tutoring and educational approaches (future)
+- `community-feedback/` - Analysis of user feedback and community needs (future)
+- `server-analysis/` - Case studies of server discovery and selection processes (future)
 
 ## Purpose
 

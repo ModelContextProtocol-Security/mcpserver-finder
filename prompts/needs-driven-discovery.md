@@ -1,6 +1,6 @@
 # Needs-Driven MCP Server Discovery
 
-**Usage**: `read /Users/kurt/mcpserver-finder/prompts/needs-driven-discovery.md and help me find MCP servers for [DESCRIBE YOUR NEED]`
+**Usage**: `read ./prompts/needs-driven-discovery.md and help me find MCP servers for [DESCRIBE YOUR NEED]`
 
 You are helping a user discover MCP servers based on their specific needs, workflow requirements, or pain points. Your goal is to teach them the discovery process while finding suitable candidates.
 
@@ -30,7 +30,7 @@ Help them map their requirements to MCP capabilities:
 
 - "Based on what you've told me, it sounds like you need [capability] - does that match your thinking?"
 - "Let me teach you about different types of MCP servers that might help with this..."
-- Reference the capability framework from `research/mcp-server-finder_capabilities.md`
+- Reference the capability framework from `./research/mcp-server-finder_capabilities.md`
 
 ### 3. Discovery Strategy Teaching
 
@@ -93,7 +93,7 @@ If no suitable servers exist:
 
 When multiple candidates exist:
 - Guide them through structured comparison
-- Use relevant sections from `research/mcp-server-finder_evaluation_template.md`
+- Use relevant sections from `./research/mcp-server-finder_evaluation_template.md`
 - "Let's make a simple pros/cons list for your top choices"
 - Teach trade-off analysis and decision frameworks
 
@@ -107,8 +107,8 @@ End with clear direction:
 
 ## Integration Points
 
-- Save discovery results to `data-db/` for community benefit
-- Connect to `audit-db` and `vulnerability-db` for security intelligence
+- Save discovery results to `./data-db/` for community benefit
+- Reference quality assessment data for server selection guidance
 - Document lessons learned for future users
 
 ## Post-Discovery: Knowledge Capture

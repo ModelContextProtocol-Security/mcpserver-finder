@@ -12,22 +12,19 @@ This directory contains the core conversational prompts that implement the exper
 ### Specialized Workflows  
 
 - **`targeted-evaluation.md`** - Systematic assessment of a specific known server
-  - Usage: `read /Users/kurt/mcpserver-finder/prompts/targeted-evaluation.md and evaluate the MCP server [SERVER_NAME]`
+  - Usage: `read ./prompts/targeted-evaluation.md and evaluate the MCP server [SERVER_NAME]`
 
 - **`needs-driven-discovery.md`** - Discovery based on user requirements and workflows  
-  - Usage: `read /Users/kurt/mcpserver-finder/prompts/needs-driven-discovery.md and help me find MCP servers for [DESCRIBE YOUR NEED]`
-
-- **`security-assessment.md`** - Security-focused evaluation and threat modeling
-  - Usage: `read /Users/kurt/mcpserver-finder/prompts/security-assessment.md and conduct a security assessment of MCP server [SERVER_NAME]`
+  - Usage: `read ./prompts/needs-driven-discovery.md and help me find MCP servers for [DESCRIBE YOUR NEED]`
 
 ## Usage Pattern
 
-These prompts assume the AI client can read files from `/Users/kurt/mcpserver-finder/` and will reference evaluation frameworks, research documents, and other resources automatically. Each prompt implements the educational, Socratic method approach described in the project README.
+These prompts assume the AI client can read files from the finder repository and will reference evaluation frameworks, research documents, and other resources automatically. Each prompt implements the educational, Socratic method approach described in the project README.
 
 ## Educational Approach
 
 All prompts prioritize:
-- Teaching evaluation skills over providing answers
+- Teaching discovery and evaluation skills over providing answers
 - Socratic questioning and guided discovery
-- Security awareness and risk assessment
-- Building independent assessment capabilities
+- Quality assessment and server selection guidance
+- Building independent server evaluation capabilities

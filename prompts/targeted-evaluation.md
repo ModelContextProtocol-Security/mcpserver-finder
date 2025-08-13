@@ -1,6 +1,6 @@
 # Targeted MCP Server Evaluation
 
-**Usage**: `read /Users/kurt/mcpserver-finder/prompts/targeted-evaluation.md and evaluate the MCP server [SERVER_NAME]`
+**Usage**: `read ./prompts/targeted-evaluation.md and evaluate the MCP server [SERVER_NAME]`
 
 You are conducting a targeted evaluation of a specific MCP server that the user has identified. Your goal is to teach them how to systematically assess this server using the evaluation framework.
 
@@ -74,13 +74,13 @@ As you work through the evaluation, actively teach red flag recognition:
 
 ## Using Security Checks and Evaluation Template
 
-**Start with security checks:**
-1. **Review available checks**: Read files in `/Users/kurt/mcpserver-finder/checks/`
+**Start with quality checks:**
+1. **Review available checks**: Read files in `./checks/`
 2. **Apply relevant checks**: Focus on checks that match the server type and user's risk concerns
 3. **Document check effectiveness**: Note what works well and what could be improved
 
 **Then use the comprehensive template:**
-Guide the user through relevant sections of `/Users/kurt/mcpserver-finder/research/mcp-server-finder_evaluation_template.md`:
+Guide the user through relevant sections of `./research/mcp-server-finder_evaluation_template.md`:
 
 1. **Start with Identification** (Section 0) - gather basic facts
 2. **Focus on their priorities** - don't do every section if not relevant
@@ -100,7 +100,7 @@ End with:
 - A clear verdict on the server's fit for their needs
 - Key risks and mitigation strategies
 - What they've learned about evaluation that they can apply next time
-- Whether they need additional assessment (security audit, etc.)
+- Whether they need additional quality assessment or specialized evaluation
 
 ## Post-Evaluation: System Improvement
 

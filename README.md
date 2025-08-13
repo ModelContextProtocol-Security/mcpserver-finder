@@ -1,12 +1,98 @@
 # MCP Server Finder
 
-**MCP server discovery expert and tutor. Teaches users how to evaluate and select MCP servers, provides guidance on requirements analysis, and helps navigate the MCP ecosystem to find the right solutions for specific needs.**
+**Security assessment tool for MCP servers and Claude Desktop Extensions - because anyone can build them, but not everyone builds them safely.**
 
-## Overview
+## Why This Tool Exists
 
-MCP Server Finder is your expert guide for navigating the Model Context Protocol ecosystem. Rather than just being a search tool, it serves as a knowledgeable tutor who teaches you how to evaluate MCP servers, understand what makes a good server, identify red flags, and make informed decisions about which servers to use for your specific needs.
+**Anyone can create MCP servers and Desktop Extensions** - no programming experience required. Here's how easy it is:
 
-The server combines educational guidance with practical discovery capabilities, helping you understand not just what servers exist, but how to evaluate them effectively. It teaches you the criteria that matter, walks you through the decision-making process, and helps you develop the skills to make good choices independently.
+### Example: Building a Desktop Extension (No Programming Needed)
+
+As Anthropic states in their [official blog post](https://www.anthropic.com/engineering/desktop-extensions):
+
+> "Internally at Anthropic, we have found that Claude is great at building extensions with minimal intervention. If you too want to use Claude Code, we recommend that you briefly explain what you want your extension to do and then add the following context to the prompt:"
+
+Simply paste this into Claude or any AI assistant:
+
+```
+I want to build this as a Desktop Extension, abbreviated as "DXT". Please follow these steps:
+
+1. **Read the specifications thoroughly:**
+   - https://github.com/anthropics/dxt/blob/main/README.md - DXT architecture overview, capabilities, and integration patterns
+   - https://github.com/anthropics/dxt/blob/main/MANIFEST.md - Complete extension manifest structure and field definitions
+   - https://github.com/anthropics/dxt/tree/main/examples - Reference implementations including a "Hello World" example
+
+2. **Create a proper extension structure:**
+   - Generate a valid manifest.json following the MANIFEST.md spec
+   - Implement an MCP server using @modelcontextprotocol/sdk with proper tool definitions
+   - Include proper error handling and timeout management
+
+3. **Follow best development practices:**
+   - Implement proper MCP protocol communication via stdio transport
+   - Structure tools with clear schemas, validation, and consistent JSON responses
+   - Make use of the fact that this extension will be running locally
+   - Add appropriate logging and debugging capabilities
+   - Include proper documentation and setup instructions
+
+4. **Test considerations:**
+   - Validate that all tool calls return properly structured responses
+   - Verify manifest loads correctly and host integration works
+
+Generate complete, production-ready code that can be immediately tested. Focus on defensive programming, clear error messages, and following the exact DXT specifications to ensure compatibility with the ecosystem.
+```
+
+**The AI will write the entire extension for you.** No coding knowledge required.
+
+## Project Status: Proof of Concept with Solid Foundation
+
+**Current Status:** This project is in the proof-of-concept phase, but we have high confidence in the approach. The methodology, templates, and assessment frameworks are complete and thoroughly designed. **This is not a question of "can it work?" - it's a matter of building out the practical implementation.**
+
+**What's Proven:** 
+- ✅ **Methodology works** - Educational approach and confidence-based assessment framework are solid
+- ✅ **Templates are comprehensive** - Quality checks and prompts cover all major evaluation areas
+- ✅ **Framework is complete** - Self-improving system design and repository separation are clear
+
+**What's Still Needed:** 
+- 🚧 **Real server evaluations** - Need to demonstrate the system working on actual MCP servers  
+- 🚧 **Discovery mechanisms** - Need practical ways to find and index servers systematically
+- 🚧 **Path portability** - Need to make the system work for users beyond the original development environment
+
+**Why We're Confident:** The core challenge was designing a sound approach to server quality assessment and user education. That foundation is solid. The remaining work is straightforward implementation - applying our proven methodology to real servers and building the tooling to make it accessible.
+
+**Timeline:** Ready to demonstrate methodology and framework now. Practical implementation underway - see [TODO.md](./TODO.md) for specific next steps.
+
+## The Problem: Easy to Build, Hard to Build Safely
+
+Since anyone can create these tools by asking AI assistants, we're seeing an explosion of MCP servers and extensions. **But many are poorly built and potentially dangerous:**
+
+- **Security vulnerabilities** - AI-generated code often has security holes
+- **Data exposure risks** - Tools may leak sensitive information
+- **Poor quality** - Many tools break, perform poorly, or aren't maintained
+- **Unknown trustworthiness** - Hard to tell which tools are safe to use
+
+## The Solution: Security-First Assessment
+
+This tool helps you **evaluate MCP servers and extensions** before using them, whether they're:
+- Built by AI assistants (like the example above)
+- Downloaded from the community
+- Created by professional developers
+- Something you built yourself
+
+### What This Tool Does
+
+- **Find reliable tools** - Discover MCP servers and Desktop Extensions that are well-built and secure
+- **Spot dangerous ones** - Identify red flags that indicate security risks or poor quality
+- **Teach evaluation skills** - Learn what to look for and why it matters
+- **Guide safe creation** - Help you build secure tools when using AI assistance
+
+## Who Needs This Tool
+
+**Everyone in the MCP ecosystem:**
+
+- **Non-programmers creating tools** - Verify your AI-generated extensions are safe
+- **Users downloading tools** - Check if community extensions are trustworthy  
+- **Security-conscious organizations** - Evaluate tools before business use
+- **Developers** - Systematic approach to tool evaluation and creation
 
 ## Expert-Guided Approach
 
@@ -125,18 +211,18 @@ This MCP server is designed as an **expert advisor and tutor** in its domain, wi
 ## Basic Functional Capabilities
 
 ### Discovery Functions
-- **Repository Search**: Can search GitHub and other code repositories
-- **Registry Query**: Access to MCP server registries and directories
-- **Documentation Analysis**: Basic parsing and analysis of server documentation
-- **Metadata Extraction**: Gathering key information about servers
-- **Community Intelligence**: Access to reputation and usage information
+- **Search Orchestration**: Guides you through using built-in search capabilities (GitHub, web search via Claude Desktop/MCP clients)
+- **Registry Navigation**: Teaches effective strategies for finding servers in MCP registries and directories  
+- **Documentation Analysis**: Structured approach to evaluating server documentation quality and completeness
+- **Metadata Interpretation**: Framework for understanding and comparing server characteristics
+- **Community Intelligence**: Methods for assessing reputation, adoption, and community feedback
 
 ### Analysis Functions
-- **Characteristic Assessment**: Basic evaluation of server features and capabilities
-- **Documentation Quality**: Assessment of documentation completeness and clarity
-- **Activity Analysis**: Evaluation of project activity and maintenance status
-- **Compatibility Check**: Basic assessment of client compatibility
-- **Risk Identification**: Recognition of common security and quality concerns
+- **Structured Evaluation**: Guides you through systematic server assessment using our quality checks
+- **Documentation Quality Framework**: Methodical approach to evaluating documentation completeness and clarity
+- **Activity Pattern Analysis**: Teaching how to interpret project activity and maintenance status indicators
+- **Compatibility Assessment**: Framework for evaluating MCP protocol compliance and client compatibility
+- **Risk Pattern Recognition**: Education on identifying common security and quality concerns
 
 ### Guidance Functions
 - **Interactive Consultation**: Conversational guidance through decision-making
@@ -175,22 +261,181 @@ This MCP server is designed as an **expert advisor and tutor** in its domain, wi
 - **Feedback Integration**: Incorporate user feedback into teaching approaches
 - **Skill Assessment**: Better understanding of user knowledge gaps and needs
 
-## Usage and Access
+## How to Use This System
 
-This MCP server is designed to be used with MCP-compatible clients and requires:
-- **Interactive Capabilities**: For conversational guidance and tutoring
-- **Basic Web Access**: For searching repositories and accessing community resources
-- **Knowledge Base Access**: For accessing expert knowledge and best practices
-- **Learning Management**: For tracking user progress and adapting guidance
+### Quick Walkthrough
 
-## Contributing
+**1. Choose Your Approach:**
+- **Need-Based Discovery**: Start with `read ./prompts/needs-driven-discovery.md` if you need to find servers for specific requirements
+- **Server Evaluation**: Use `read ./prompts/targeted-evaluation.md` if you already have a specific server to assess
+- **General Guidance**: Use `read ./prompts/main-prompt.md` for overall MCP server guidance
 
-This tool is part of the broader Model Context Protocol Security initiative. We welcome contributions that enhance the expert knowledge and teaching capabilities:
-- **Domain Expertise**: Insights about MCP server evaluation and selection
-- **Teaching Methods**: Improved approaches for educating users about server choice
-- **Discovery Techniques**: Better methods for finding and analyzing servers
-- **Evaluation Frameworks**: Enhanced criteria and methodologies for server assessment
-- **Community Intelligence**: Information about server reputation, usage patterns, and quality
+**2. Apply Quality Checks:**
+- Browse `./checks/` directory for available quality assessments
+- Each check includes automated scripts and manual evaluation guidance
+- Current checks: GitHub repository health, code quality, test quality, dependency management
+- Use confidence levels (High/Medium/Low) to calibrate your trust in findings
+
+**3. Reference Research & Resources:**
+- `./research/` contains evaluation templates and capability frameworks
+- `./resources/` has structured checklists and decision frameworks
+- Many checklists exist but don't have dedicated check files yet - **great contributor opportunity!**
+
+**4. Leverage External Tools:**
+- Discovery capabilities (GitHub search, web search) are built into Claude Desktop and other MCP clients
+- File analysis and code review leverage your AI assistant's existing capabilities
+- This system provides the methodology; your tools provide the execution power
+
+**5. Contribute Back:**
+- Add real server evaluation results to `./data-db/` (coming soon)
+- Submit audit findings to the companion `mcpserver-audit` repository
+- Help us learn from your discoveries and improve the assessment framework
+
+### Quick Start Examples
+
+**Find Tools by Need** (discover what's available):
+```
+read ./prompts/needs-driven-discovery.md and help me find MCP servers for [DESCRIBE YOUR NEED]
+```
+
+**Evaluate Specific Tool** (detailed analysis):
+```
+read ./prompts/targeted-evaluation.md and evaluate the MCP server [SERVER_NAME]
+```
+
+**Apply Quality Check** (assess specific quality aspect):
+```
+read ./checks/github-repository-health.md and assess the repository health of [SERVER_NAME]
+```
+
+### For Tool Creators
+
+**Building MCP Servers**: Use AI assistance with our security guidance to create safe, well-built servers
+
+**Building Desktop Extensions**: Follow the DXT specification with security best practices
+
+**Development Prompt for Desktop Extensions**:
+```
+I want to build this as a Desktop Extension, abbreviated as "DXT". Please follow these steps:
+
+1. **Read the specifications thoroughly:**
+   - https://github.com/anthropics/dxt/blob/main/README.md - DXT architecture overview, capabilities, and integration patterns
+   - https://github.com/anthropics/dxt/blob/main/MANIFEST.md - Complete extension manifest structure and field definitions
+   - https://github.com/anthropics/dxt/tree/main/examples - Reference implementations including a "Hello World" example
+
+2. **Create a proper extension structure:**
+   - Generate a valid manifest.json following the MANIFEST.md spec
+   - Implement an MCP server using @modelcontextprotocol/sdk with proper tool definitions
+   - Include proper error handling and timeout management
+
+3. **Follow best development practices:**
+   - Implement proper MCP protocol communication via stdio transport
+   - Structure tools with clear schemas, validation, and consistent JSON responses
+   - Make use of the fact that this extension will be running locally
+   - Add appropriate logging and debugging capabilities
+   - Include proper documentation and setup instructions
+
+4. **Test considerations:**
+   - Validate that all tool calls return properly structured responses
+   - Verify manifest loads correctly and host integration works
+
+Generate complete, production-ready code that can be immediately tested. Focus on defensive programming, clear error messages, and following the exact DXT specifications to ensure compatibility with the ecosystem.
+```
+
+**Then use our security assessment tools** to verify your creation is safe and well-built.
+
+### System Requirements
+
+- **Claude Desktop** or other MCP-compatible AI client
+- **File system access** to read the assessment guides and security checks
+- **Internet access** for researching and discovering tools (optional but helpful)
+
+## Learn More
+
+### Key Resources
+- **[Desktop Extensions Blog Post](https://www.anthropic.com/engineering/desktop-extensions)** - Official introduction to building Claude Desktop Extensions
+- **[DXT GitHub Repository](https://github.com/anthropics/dxt)** - Complete specifications and examples for Desktop Extensions
+- **[Model Context Protocol](https://modelcontextprotocol.io/)** - Official MCP documentation and specifications
+
+### Our Security-First Approach
+
+This tool is part of the **Model Context Protocol Security** initiative - a community project focused on making MCP tools safer and more reliable. We emphasize:
+
+- **Education over automation** - Teaching you to evaluate tools yourself
+- **Security awareness** - Helping you recognize and avoid risks  
+- **Community knowledge** - Sharing insights about tool quality and safety
+- **Continuous improvement** - Getting better through real-world usage
+
+### Personalized Learning (Future Vision)
+
+**Long-term goal**: Make the teaching style flexible and personalized to each user's needs, experience level, and learning preferences.
+
+Since this is an AI-powered tool, we can build assessment capabilities that customize themselves to you:
+- **Adapt to your skill level** - Beginners get more explanation, experts get concise analysis
+- **Match your role** - Different guidance for developers vs. business users vs. security professionals
+- **Learn your preferences** - Remember what teaching methods work best for you
+- **Focus on your goals** - Emphasize the security aspects most relevant to your use case
+- **Evolve with you** - Become more advanced as your expertise grows
+
+**AI enables personalization at scale** - the same tool can be a patient tutor for newcomers and an efficient expert advisor for professionals, adapting in real-time to what each user needs and wants.
+
+### Comprehensive Security Coverage (Present and Future)
+
+Our assessment approach covers **both known and unknown security risks**:
+
+**Known Vulnerabilities**: We systematically cover established security patterns:
+- **Standard CWE categories** - All applicable Common Weakness Enumerations 
+- **AI-specific threats** - Prompt injection, model manipulation, training data poisoning
+- **MCP protocol risks** - Transport security, authentication flows, message validation
+- **Supply chain issues** - Dependency vulnerabilities, maintainer trust, build security
+
+**Emerging Threats**: We train the AI to recognize new and evolving risks:
+- **Pattern recognition** - Identify suspicious code structures that don't match known vulnerabilities
+- **Contextual analysis** - Spot concerning combinations of features that individually seem safe
+- **Behavioral assessment** - Detect unusual server behaviors that could indicate novel attack vectors
+- **Ecosystem monitoring** - Flag new trends in the MCP community that might introduce risks
+
+**The goal**: Create an assessment system that catches both the security issues we know about today AND the ones we haven't discovered yet. AI's ability to recognize patterns and analyze context makes this possible in ways traditional static analysis tools cannot match.
+
+### Security Framework Integration
+
+We're building comprehensive mappings between vulnerabilities and security frameworks:
+
+**Standards Alignment**:
+- **CWE Mapping** - Every vulnerability linked to Common Weakness Enumeration categories
+- **NIST Framework** - Map findings to NIST Cybersecurity Framework controls
+- **OWASP Integration** - Align with OWASP Top 10 and Application Security standards
+- **ISO 27001 Controls** - Connect vulnerabilities to specific ISO security controls
+
+**Threat Intelligence Integration**:
+- **MITRE ATT&CK** - Map attack patterns to MITRE ATT&CK framework tactics and techniques
+- **Threat Modeling** - Link vulnerabilities to specific threat actors and attack scenarios
+- **Risk Quantification** - Calculate business impact and likelihood scores
+- **Control Effectiveness** - Measure how security controls reduce specific risks
+
+**Enterprise Security Integration**:
+- **Compliance Reporting** - Generate reports for SOC 2, PCI-DSS, HIPAA, etc.
+- **Security Control Mapping** - Show which controls address which vulnerabilities
+- **Risk Register Integration** - Feed findings into enterprise risk management systems
+- **Policy Alignment** - Map findings to organizational security policies
+
+This creates a **comprehensive security intelligence system** that doesn't just find problems, but explains their business impact, regulatory implications, and exactly which security controls need to be implemented to address them.
+
+### Contributing
+
+We welcome contributions that help users make better server choices:
+
+**High-Priority Contributions:**
+- **Real server evaluations** - Apply our methodology to actual MCP servers and share results
+- **New quality checks** - Many checklists in `./resources/` need corresponding check files in `./checks/`
+- **Discovery examples** - Document successful server finding strategies and search patterns
+- **Audit integration** - Submit detailed security findings to the companion `mcpserver-audit` repository for community learning
+
+**Other Valuable Contributions:**
+- **Teaching improvements** based on user feedback and real usage
+- **Examples** of good and bad server patterns discovered in the wild  
+- **Community intelligence** about server reputation, adoption, and quality trends
+- **Methodology refinements** based on practical application experience
 
 ---
 
