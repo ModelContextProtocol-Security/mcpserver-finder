@@ -235,7 +235,7 @@ This MCP server is designed as an **expert advisor and tutor** in its domain, wi
 ## Integration with Ecosystem
 
 ### Learning from Other Experts
-- **mcpserver-audit**: Incorporate security expertise and vulnerability knowledge
+- **mcpserver-audit**: Leverage security assessment expertise for comprehensive evaluation
 - **mcpserver-builder**: Understand development best practices and quality indicators
 - **mcpserver-operator**: Learn about operational requirements and deployment considerations
 - **Community Knowledge**: Leverage collective experience and recommendations
@@ -335,7 +335,7 @@ read ./checks/github-repository-health.md and assess the repository health of [S
 This tool is part of the **Model Context Protocol Security** initiative - a community project focused on making MCP tools safer and more reliable. We emphasize:
 
 - **Education over automation** - Teaching you to evaluate tools yourself
-- **Security awareness** - Helping you recognize and avoid risks  
+- **Quality awareness** - Helping you recognize reliable, well-maintained servers  
 - **Community knowledge** - Sharing insights about tool quality and safety
 - **Continuous improvement** - Getting better through real-world usage
 
@@ -378,7 +378,7 @@ We welcome contributions that help users make better server choices:
 - **Real server evaluations** - Apply our methodology to actual MCP servers and share results
 - **New quality checks** - Many checklists in `./resources/` need corresponding check files in `./checks/`
 - **Discovery examples** - Document successful server finding strategies and search patterns
-- **Audit integration** - Submit detailed security findings to the companion `mcpserver-audit` repository for community learning
+- **Assessment integration** - Submit detailed evaluation findings to the companion `mcpserver-audit` repository for community learning
 
 **Other Valuable Contributions:**
 - **Teaching improvements** based on user feedback and real usage

@@ -1,4 +1,4 @@
-# MCP Server Security Assessment Workflow
+# MCP Server Discovery and Quality Evaluation Workflow
 
 This document describes the strategic workflow for developing and continuously improving MCP server discovery and quality evaluation capabilities through the MCP Server Finder system.
 

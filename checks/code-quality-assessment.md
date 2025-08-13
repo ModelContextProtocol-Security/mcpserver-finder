@@ -155,7 +155,7 @@ grep -r "TODO\|FIXME\|HACK" . --include="*.py" --include="*.js" --include="*.ts"
 
 ### Why This Matters
 **Impact on Quality**: Good code quality reduces bugs, improves security, and enables reliable server operation
-**Risk Implications**: Poor quality code is harder to audit for security issues and more likely to contain vulnerabilities
+**Risk Implications**: Poor quality code is harder to maintain and more likely to contain bugs and reliability issues
 **User Experience**: Quality code provides better error messages, more predictable behavior, and easier troubleshooting
 
 ### Supporting Evidence
@@ -172,7 +172,7 @@ grep -r "TODO\|FIXME\|HACK" . --include="*.py" --include="*.js" --include="*.ts"
 
 ### Using High Confidence Results
 - Use automated linting results as minimum quality gates
-- Apply strict standards for critical security and error-handling code
+- Apply strict standards for critical functionality and error-handling code
 - Weight clean static analysis results heavily in server selection
 
 ### Handling Low Confidence Results
