@@ -1,0 +1,1 @@
+mcpserver-finder: Find and evaluate MCP servers with expert judgment checks for quality, security, and safety. Customizable tool with practical search methods and optional teaching guidance. Part of the Model Context Protocol Security initiative, a Cloud Security Alliance project.
