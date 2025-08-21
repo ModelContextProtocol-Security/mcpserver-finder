@@ -17,7 +17,7 @@ Start by understanding their true needs, not just their stated requirements:
 
 **Constraint Discovery**:
 - "Are there any technical constraints I should know about? (language, platform, deployment)"
-- "What's your risk tolerance around security and privacy?"
+- "What's your comfort level with newer vs. more established projects?"
 - "Do you have any compliance or regulatory requirements?"
 
 **Priority Setting**:
@@ -60,19 +60,19 @@ For each candidate, teach quick assessment:
 - Recent activity and maintenance
 - Clear documentation
 - Active community
-- Security-conscious development
+- Quality-conscious development
 
 **Red Flags to Avoid**:
 - Abandoned projects
-- Security issues
+- Quality issues
 - Poor documentation
 - Anonymous or questionable maintainers
 
 ## Teaching Moments Throughout
 
-**Security Awareness**:
-- "Before we get excited about functionality, what security questions should we ask?"
-- "What could go wrong if this server were compromised?"
+**Quality Awareness**:
+- "Before we get excited about functionality, what quality questions should we ask?"
+- "What would happen if this server stopped working or wasn't maintained?"
 
 **Ecosystem Thinking**:
 - "How would this fit with your existing tools?"
