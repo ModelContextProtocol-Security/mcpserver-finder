@@ -1,30 +1,37 @@
 # Prompts
 
-This directory contains the core conversational prompts that implement the expert tutoring and guidance system for MCP server discovery and evaluation.
+This directory contains the core prompt for MCP server discovery and evaluation expertise.
 
-## Available Prompts
+## Main Prompt
 
-### Core Prompts
+**`main-prompt.md`** - Complete MCP server discovery and evaluation tool
+- **Purpose**: Expert guidance for finding and evaluating MCP servers
+- **Capabilities**: Requirements-driven discovery, targeted evaluation, comparative analysis
+- **Integration**: Designed for orchestrator coordination and standalone use
+- **Learning**: Adaptive educational approach with Socratic method
 
-- **`main-prompt.md`** - Primary expert tutor persona and overall approach
-  - Use this for general MCP server guidance and as a foundation for all other prompts
+## Usage via Orchestrator
 
-### Specialized Workflows  
+The main prompt is typically accessed through the MCP Security Orchestrator:
+```
+# From orchestrator
+"I need to find an MCP server for web search"
+→ Orchestrator routes to finder tool
 
-- **`targeted-evaluation.md`** - Systematic assessment of a specific known server
-  - Usage: `read ./prompts/targeted-evaluation.md and evaluate the MCP server [SERVER_NAME]`
+# Direct usage
+read ../../mcpserver-finder/prompts/main-prompt.md and [your discovery/evaluation request]
+```
 
-- **`needs-driven-discovery.md`** - Discovery based on user requirements and workflows  
-  - Usage: `read ./prompts/needs-driven-discovery.md and help me find MCP servers for [DESCRIBE YOUR NEED]`
+## Specialized Workflow Guides
 
-## Usage Pattern
-
-These prompts assume the AI client can read files from the finder repository and will reference evaluation frameworks, research documents, and other resources automatically. Each prompt implements the educational, Socratic method approach described in the project README.
+Detailed workflow guidance has been moved to `../resources/`:
+- **Discovery Workflow**: `../resources/discovery-workflow-guide.md`
+- **Evaluation Workflow**: `../resources/evaluation-workflow-guide.md`
 
 ## Educational Approach
 
-All prompts prioritize:
-- Teaching discovery and evaluation skills over providing answers
-- Socratic questioning and guided discovery
-- Quality assessment and server selection guidance
-- Building independent server evaluation capabilities
+The main prompt implements:
+- **Socratic questioning** and guided discovery
+- **Progressive complexity** from basic to sophisticated analysis
+- **Quality-first focus** on reliable, maintainable servers
+- **Context-adaptive** guidance based on deployment scenario
