@@ -386,6 +386,10 @@ We welcome contributions that help users make better server choices:
 - **Community intelligence** about server reputation, adoption, and quality trends
 - **Methodology refinements** based on practical application experience
 
+## Get Involved
+
+Join our community: [GitHub Discussions](https://github.com/orgs/ModelContextProtocol-Security/discussions) • [Slack #mcp channel](https://csaurl.org/mcp-invite) • [Contribute on GitHub](https://github.com/ModelContextProtocol-Security)
+
 ---
 
 *Part of the [Model Context Protocol Security](https://modelcontextprotocol-security.io/) initiative - A Cloud Security Alliance community project.*
