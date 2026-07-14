@@ -42,10 +42,9 @@ The MCP Server Finder is a **discovery and quality evaluation framework** that h
 
 ### Core Framework
 - **`/prompts/`** - Interactive prompts for different discovery and evaluation scenarios
-  - `main-prompt.md` - Primary expert tutor persona
-  - `targeted-evaluation.md` - Systematic assessment of specific servers
-  - `needs-driven-discovery.md` - Discovery based on user requirements
+  - `main-prompt.md` - Primary expert tutor persona (currently covers both needs-driven discovery and targeted evaluation flows described under "Common Workflows" below)
   - `PROMPT-TEMPLATE.md` - Template for creating new prompts
+  - Note: dedicated `targeted-evaluation.md` / `needs-driven-discovery.md` prompt files are planned but not yet split out
 
 - **`/checks/`** - Quality assessment procedures and evaluation methods
   - `github-repository-health.md` - Repository activity and maintenance assessment
@@ -56,13 +55,19 @@ The MCP Server Finder is a **discovery and quality evaluation framework** that h
 
 ### Supporting Framework
 - **`/research/`** - Background frameworks and evaluation methodologies
-  - Contains evaluation templates and capability specifications
-  
-- **`/resources/`** - Structured checklists and decision-making aids
-  - Will contain practical checklists and decision frameworks
-  
-- **`/data-db/`** - Server discovery data and community intelligence (planned)
+  - `mcp-server-finder_capabilities.md`, `mcp-server-finder_evaluation_template.md`
+
+- **`/resources/`** - Structured workflow guides and decision-making aids
+  - `discovery-workflow-guide.md`, `evaluation-workflow-guide.md`
+
+- **`/tools/`** - Placeholder for future finder tool implementations (currently just a README)
+
+- **`/data-db/`** - Server discovery data and community intelligence (planned, not yet present)
   - Will store real server evaluation results and community feedback
+
+### Top-level reference docs
+- **`WORKFLOW.md`** - The discovery/evaluation operating loop and how use feeds framework improvement
+- **`TODO.md`** - Prioritized backlog and next steps
 
 ## Key Principles
 
@@ -215,4 +220,4 @@ The MCP Server Finder is a **discovery and quality evaluation framework** that h
 
 **Remember**: This system teaches server discovery and evaluation skills while providing practical guidance. The goal is building user expertise in finding reliable, well-maintained MCP servers that fit their specific needs, with clear separation from detailed security analysis which belongs in companion tools.
 
-*Last updated: 2025-08-13*
+*Last updated: 2026-07-14*
